@@ -1,11 +1,27 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
+      <div>
+        <i className="fa-solid fa-envelope"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-seedling"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-users"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-newspaper"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-feather-pointed"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-bookmark"></i>
+      </div>
+      <div>
+        <i className="fa-solid fa-bell"></i>
+      </div>
     </footer>
   );
 }

@@ -1,7 +1,25 @@
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function Header() {
+  const [pageTitle, setPageTitle] = useState("");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname.substring(1);
+
+    const firstSegment = path.split("/")[0];
+
+    const title = path
+      ? path.charAt(0).toUpperCase() + firstSegment.slice(1)
+      : "Home";
+    setPageTitle(title);
+  }, [location]);
+
   return (
     <header className="header">
-      <div className="header-page-title">Page Title</div>
+      <div className="header-page-title">{pageTitle}</div>
       <div className="drawer-container">
         <button onClick={null} className="mr-1">
           <svg

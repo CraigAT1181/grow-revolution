@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================
+   Base Styles
+=========================== */
+/* Reset or Normalize */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Typography Defaults */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ===========================
+   Layout Styles
+=========================== */
+.wrapper {
+  @apply flex flex-col min-h-screen bg-white;
+}
+
+header {
+  @apply flex justify-between bg-white text-green-900 text-2xl py-2;
+}
+
+.header-page-title {
+  @apply flex-1 text-center;
+}
+
+main {
+  @apply flex-1 p-2;
+}
+
+footer {
+  @apply flex justify-around bg-white text-green-900 p-2;
+}
+
+.drawer-container {
+  @apply flex items-center lg:hidden;
+}
+
+/* GOOGLE FONTS - NUNITO & MONTSERRAT */
+
+/* Montserrat Classes */
+
+.montserrat-thin {
+  font-family: "Montserrat", serif;
+  font-weight: 100;
+}
+
+.montserrat-extra-light {
+  font-family: "Montserrat", serif;
+  font-weight: 200;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+
+.montserrat-extra-bold {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+}
+
+.montserrat-black {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+}
+
+/* Montserrat Italic Variations */
+.montserrat-thin-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-extra-light-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.montserrat-light-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-regular-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-medium-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.montserrat-semibold-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.montserrat-bold-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-extra-bold-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.montserrat-black-italic {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Nunito Classes */
+.nunito-thin {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+}
+
+.nunito-extra-light {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.nunito-light {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.nunito-medium {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.nunito-semibold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.nunito-bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.nunito-extra-bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+.nunito-black {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+/* Nunito Italic Variations */
+.nunito-thin-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.nunito-extra-light-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nunito-light-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.nunito-regular-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.nunito-medium-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.nunito-semibold-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.nunito-bold-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nunito-extra-bold-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.nunito-black-italic {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

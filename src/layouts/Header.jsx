@@ -13,7 +13,7 @@ export default function Header() {
 
     const title = path
       ? path.charAt(0).toUpperCase() + firstSegment.slice(1)
-      : "Home";
+      : "Welcome!";
     setPageTitle(title);
   }, [location]);
 
